@@ -2,20 +2,161 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.flex {
+  display: flex;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.flex-col {
+  flex-direction: column;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-gradient-to-br {
+  background: linear-gradient(to bottom right, #38bdf8 10%, #ec4899 50%, #fbbf24 90%);
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  cursor: pointer;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  cursor: pointer;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.h-60, .w-60 {
+  height: 15rem;
+  width: 15rem;
+  cursor: pointer;
+}
+
+.img2, .h-70, .w-70 {
+  height: 27.5rem;
+  width: 25.5rem;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.appearance-none {
+  appearance: none;
+  -webkit-appearance: none; /* For WebKit browsers (Safari, Chrome) */
+  -moz-appearance: none;    /* For Gecko browsers (Firefox) */
+}
+
+footer{
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Smaller screens (phones) */
+@media (max-width: 640px) {
+  .text-4xl {
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+  .text-3xl {
+      font-size: 1.25rem;
+      cursor: pointer;
+  }
+  .text-xl {
+      font-size: 1rem;
+      cursor: pointer;
+  }
+  .h-60, .w-60 {
+      height: 4rem;
+      width: 4rem;
+      cursor: pointer;
+  }
+  .img2, .h-70, .w-70 {
+      height: 9rem;
+      width: 9rem;
+      cursor: pointer;
+  }
+  .px-8 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      cursor: pointer;
+  }
+  .py-4 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      cursor: pointer;
+  }
+  footer{
+      cursor: pointer;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Medium screens (tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .text-4xl {
+      font-size: 1.75rem;
+      cursor: pointer;
+  }
+  .text-3xl {
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+  .text-xl {
+      font-size: 1.125rem;
+      cursor: pointer;
+  }
+  .h-60, .w-60 {
+      height: 8rem;
+      width: 8rem;
+      cursor: pointer;
+  }
+  .img2, .h-70, .w-70 {
+      height: 22rem;
+      width: 18rem;
+      cursor: pointer;
+  }
+  .px-8 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      cursor: pointer;
+  }
+  .py-4 {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      cursor: pointer;
+  }
+  footer{
+      cursor: pointer;
+  }
 }
