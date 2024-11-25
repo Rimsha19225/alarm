@@ -58,7 +58,7 @@ const CountDown: React.FC = () => {
                 alt="alarm"
                 width={200}
                 height={250}
-                className='absolute top-5 left-5 w-50 h-70'
+                className='time absolute top-5 left-5 w-50 h-70'
                 />
             </div>
             <Image

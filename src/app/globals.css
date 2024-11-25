@@ -93,6 +93,7 @@ footer{
       font-size: 1.25rem;
       cursor: pointer;
   }
+  
   .text-xl {
       font-size: 1rem;
       cursor: pointer;
@@ -101,6 +102,11 @@ footer{
       height: 4rem;
       width: 4rem;
       cursor: pointer;
+  }
+  .img2{
+    width: 20rem;
+    top: -15;
+    left: -4;
   }
   .img2, .h-70, .w-70 {
       height: 9rem;
